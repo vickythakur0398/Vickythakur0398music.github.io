@@ -1,0 +1,255 @@
+/*ye upar vala sedction h topmost wali line*/
+
+#top-section{
+	width: 100%;
+	/*border:2px solid black;*/
+	display: flex;
+	height: 2%;
+	justify-content: space-between;
+}
+
+#premium-con{
+	width: 20%;
+	height:30px;
+	border:2px solid red;
+	margin-left: 20px;
+	margin-top: 8PX;
+	border-radius: 20%;
+	background-color:red ; 
+}
+
+/*jo div ke andar likna h normally uska class*/
+.text-in-div{
+	text-align: center;
+	font-weight: bold;
+
+
+}
+
+/*logo matlb circle me dalna h uska*/
+#logom{
+	height: 50px;
+	width: 50px;
+	margin-left: 5%;
+	border-radius: 50%;
+	background-image: cover;
+
+}
+
+#search-icon{
+	margin-left:0;
+	margin-top: 8px;
+	/*border: 1px solid cyan;*/
+}
+
+#search-icon-logo{
+ margin-left: 32px;
+}
+
+#search-icon-logo img{
+	width: 22px;
+	margin-top:62%;
+	margin-left: 20%;
+	opacity: 1; 
+}
+
+
+#user-id{
+	margin-left:2%; 
+	height: 50px;
+	width: 50px;
+	border: 2px solid black;
+	border-radius: 50%;
+
+
+}
+
+/*now we are working on nav section*/
+#nav-bar{
+	margin: 2px;
+	width: 100%;
+	border: 1px solid black;  
+	background-color:red;
+	display: inline-block;
+
+}
+
+#nav-bar li{
+	
+	display: inline-block;
+	margin :0px 79px 0px 2px;
+	font-weight: 100;
+	font-size: 1rem;
+}
+
+
+
+/*Div of music section whole*/
+#music-whole{
+	width: 98vw;
+	border: 1px solid black;
+}
+
+
+#top-music-flex{
+	width: 80%;
+	border:1px solid red;
+	height: 300px;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	margin-left: 15px;
+	background-color: black;
+	/*display: flex;*/
+	/*/overflow: scroll;*/
+}
+
+#container{
+	width: 200%;
+}
+
+::-webkit-scrollbar-y {
+  width: 200px;
+  color: red;
+}
+div::-webkit-scrollbar {
+  width: 1px;
+}
+
+div::-webkit-scrollbar-track {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+div::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: lightgrey;
+  outline: 2px solid slategrey;
+}
+
+
+
+.one{
+	height: 225px;
+	width: 360px;
+	border:1px solid black;
+	margin: 20px;
+	/*display: inline-flex;*/
+}
+
+#top-music-flex div{
+
+	display: inline-block;
+	display:inline-flex;
+	flex-direction: row;
+}
+
+#uri{
+	background-image: url("uri.jpg");
+		  	background-size:cover;
+
+}
+
+#kesri{
+	/*<img src="kesri.jpg">*/
+	background-image: url("kesri.jpg");
+			  	background-size:cover;
+
+}
+
+#saheed{
+	background-image: url(saheed.jpg);
+			  	background-size:cover;
+
+}
+
+#akshay{
+	background-image: url("akshay.jpg");
+	
+	background-size: contain;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+/*.one img{
+	  /*object-fit: cover;*/
+	    background-repeat: no-repeat;
+  		background-size: auto;
+
+ 
+
+}
+
+
+/*button focus*/
+button:focus {
+    border: none;
+    outline: none;
+}
+
+*/
+/*#side-player{*/
+	width: 20%;
+	border:1px solid maroon;
+	/*display: inline-block;*/
+}
+
+
+/*ab ye h har image ki height or width*/
+/*.image-all{
+	height: 100px;
+	width: 40px;
+	border: 8px solid balck;
+}
+
+#border{
+	background-image: cover;
+	height: 20px;
+	width: 20px;
+}*/
+
+/*#top-music-flex{
+	display: inline-flex;
+}
+*/
+
+
+/*graetest hits wala*/
+#hits{
+	background-color: blue;
+}
+
+
+
+/*aside wala section ka scene pura*/
+aside{
+	width: 18%;
+	height:600px;
+	border: 1px solid cyan;
+	float: right;
+	margin-top: -303px;
+	/*animation-name: bada-ho-ja;*/
+	/*transform: scale(5);*/
+	/*display: none;*/
+}
+
+aside:hover{
+	position: abso;
+	background-color: blue;
+	float: right;
+	transform:scaleX(1.5);
+	float:right;
+}
+
+
+#brand-jingle{
+	margin:6%;
+	padding:4%;
+	width: 80%;
+	height: 8em;
+	background-color:red;
+	border: 2px solid green;
+
+}
+
+
+
