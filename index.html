@@ -4,13 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <title>VickyMusicPlayer</title>
-    <!-- Linking CSS File -->
+    <!-- linking CSS file -->
     <link rel="stylesheet" type="text/css" href="style.css">
-    <!-- Including Font Awesome -->
+    <!-- including font awesome used for heart noti and mic im -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Incuding the Font that I have used -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <!-- Including FriIconix, alternative to Font Awesome -->
+    <!-- Including friIconix, alternative to font awesome taken ear from here -->
     <script defer src="https://friconix.com/cdn/friconix.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,16 +19,17 @@
     <!-- HEADER -->
     <header>
         <div>
-           <!-- My image and my site  -->
+           <!-- My image and for reloadingg -->
             <a href="index.html"><img class="iconimg" src="Images/vicky.jpg" alt="Unable to Load"></a>
             <div id="studiotext">
                 <span><b>VickyThakur</b><br>0398</span>
             </div>
 
-            <div class="wrap">
+            <!-- search bar  -->
+            <div class="Notification-dummy">
                 <div class="search">
                     <!-- only piicture does nothing -->
-                    <input type="text" class="searchTerm" placeholder="Search">
+                    <input type="text" class="SearchBar-Dummy" placeholder="Search">
                     <button type="submit" class="micButton">
                             <i class="fa fa-microphone"></i>
                         </button>
@@ -54,11 +53,12 @@
                 </a>
             </div>
 
-            <!-- Hamburger icon  -->
-            <!-- Responsiveness is addede -->
+            <!-- hamburger icon  -->
+            <!-- responsiveness is added -->
 
         <div class="dropdown-menu text-right">
                 <div class="bars">
+                    <!-- frionix's tag  -->
                     <i class="fi-xnsuxl-three-bars-solid"></i>
                 </div>
                 <div class="dropdown-list nav-menu">
@@ -75,23 +75,29 @@
         </div>
     </header>
 
-    <!-- Carousel which works with Hover -->
+    <!-- This contains all the three div poster of song -->
 
 
     
     <main>
-        <!-- Carousel which works with Hover -->
-        <section id="carousel">
-            <div class="carousel">
-                <div class="carousel-row">
-                    <div class="carousel-tile">
-                        <img src="./Images/EDMC.jpg" alt="nil" class="tile_img">
+        <!-- Poster-on-topy which works with Hover  -->
+        <section id="Poster-on-topy">
+            <div class="Poster-on-topy">
+                <div class="Poster-on-topy-row">
+                    <div class="Poster-on-topy-tile">
+                        <a href="https://www.youtube.com/watch?v=BubwLnPcQjc&t=417s">
+                        <img src="./Images/EDMC.jpg" alt="not able to load" class="tile_img">
+                        </a>
                     </div>
-                    <div class="carousel-tile">
+                    <div class="Poster-on-topy-tile">
+                        <a href= "https://www.youtube.com/watch?v=4WbyKMMy9EM">
                         <img src="Images/PunjabiinDaClub.jpg" alt="" class="tile_img">
+                        </a>
                     </div>
-                    <div class="carousel-tile">
+                    <div class="Poster-on-topy-tile">
+                        <a href="https://www.youtube.com/results?search_query=dil+diyan+gallan+">
                         <img class="tile__img" src="Images/DilDiyanGallan.jpg" alt="NIL">
+                        </a>
                     </div>
 
                 </div>
@@ -99,11 +105,11 @@
         </section>
 
         <!-- Latest Release Section with 4 Latest Releases -->
-        <section id="latest_release">
+        <section id="EVER-GREEN">
             <h1 class="headings">
-                Latest Release
+                EVER GREEN 
             </h1>
-            <div class="latest-release-container">
+            <div class="EVER-GREEN-CONTAINER">
                 <div class="flex-item">
                     <a href="#show"><img src="sel.jpg" alt="Unable to Load"></a>
                     <div class="info-container">
@@ -159,7 +165,8 @@
 
         </section>
 
-        <!--  Artists only page is for kesri and all rest is same  -->
+        <!--  ADDED RAM NAAM ADHAR IN ALL IF WE WANT TO ADD 
+        OTHER SONG JUST ADD AT LAST IN HREF ADD THAT LINK  -->
 
         <section id="popular-artist">
             <h1 class="headings">
@@ -167,39 +174,39 @@
             </h1>
             <div class="popular-artist-container">
                 <div>
-                    <img src="Images/Martin1.jpg" alt="Unable to Load" class="popular-artist-img">
-                    <a href="Kesri.html"><img src="./Images//play-circle-regular.svg" class="icon">
+                    <img src="Images/RAM.jpg" alt="Unable to Load" class="popular-artist-img">
+                    <a href="https://www.youtube.com/watch?v=3MekfUKbf78"><img src="./Images//play-circle-regular.svg" class="icon">
                         <p class="pointer">Ramanand</p>
                     </a>
                 </div>
 
                 <div>
                     <img src="Images/passenger2.jpg" alt="Unable to Load" class="popular-artist-img">
-                    <a href="Kesri.html"><img src="./Images//play-circle-regular.svg" class="icon">
+                    <a href="https://www.youtube.com/watch?v=3MekfUKbf78"><img src="./Images//play-circle-regular.svg" class="icon">
                         <p class="pointer">Lata Mangeskar</p>
                     </a>
                 </div>
                 <div>
                     <img src="Images/Tay.jpg" alt="Unable to Load" class="popular-artist-img">
-                    <a href="Kesri.html"><img src="./Images//play-circle-regular.svg" class="icon">
+                    <a href="https://www.youtube.com/watch?v=3MekfUKbf78"><img src="./Images//play-circle-regular.svg" class="icon">
                         <p class="pointer">Arjit Singh </p>
                     </a>
                 </div>
                 <div>
                     <img src="Images/Shreya.jpg" alt="Unable to Load" class="popular-artist-img">
-                    <a href="Kesri.html"><img src="./Images//play-circle-regular.svg" class="icon">
+                    <a href="https://www.youtube.com/watch?v=3MekfUKbf78"><img src="./Images//play-circle-regular.svg" class="icon">
                         <p class="pointer">Shreya Ghoshal</p>
                     </a>
                 </div>
                 <div>
                     <img src="Images/sel.jpg" alt="Unable to Load" class="popular-artist-img">
-                    <a href="Kesri.html"><img src="./Images//play-circle-regular.svg" class="icon">
+                    <a href="https://www.youtube.com/watch?v=3MekfUKbf78"><img src="./Images//play-circle-regular.svg" class="icon">
                         <p class="pointer">Sanam</p>
                     </a>
                 </div>
                 <div>
                     <img src="Images/Charlie.jpg" alt="Unable to Load" class="popular-artist-img">
-                    <a href="Kesri.html"><img src="./Images//play-circle-regular.svg" class="icon">
+                    <a href="https://www.youtube.com/watch?v=3MekfUKbf78"><img src="./Images//play-circle-regular.svg" class="icon">
                         <p class="pointer">Charlie Puth</p>
                     </a>
                 </div>
@@ -237,7 +244,7 @@
         </section>
 
 
-        <!-- Types of Music Section which can be used to store similar music mixes -->
+        <!-- Road trip edm section -->
         <section id="music-types">
             <div class="types-container">
                 <div class="types-items">
@@ -262,15 +269,16 @@
 
         </section>
 
-        <!-- A section for Latest songs in English Language -->
-        <section id="Latest-English">
+        <!-- In this i have added few songs from bollywood's gangs of wasseypur
+         in latest hindi everthing is same -->
+        <section id="BEST-FROM-BOLLYWOOD">
             <h1 class="headings">
                 Best From Bollywood
             </h1>
             <div class="latest-container">
                 <div class="latest-item">
-                    <a href="#show"><img src="Images/Sorry.jpg"></a>
-                    <a href="#show">
+                    <a href="#show1"><img src="Images/Sorry.jpg"></a>
+                    <a href="#show1">
                         <p class="pointer">
                             Badhshah
                         </p>
@@ -280,8 +288,8 @@
                     </p>
                 </div>
                 <div class="latest-item">
-                    <a href="#show"><img src="Images/Gabru.jpg"></a>
-                    <a href="#show">
+                    <a href="#show2"><img src="Images/Gabru.jpg"></a>
+                    <a href="#show2">
                         <p class="pointer">
                             Gabru
                         </p>
@@ -291,8 +299,8 @@
                     </p>
                 </div>
                 <div class="latest-item">
-                    <a href="#show"><img src="Images/Closer.jpg"></a>
-                    <a href="#show">
+                    <a href="#show3"><img src="Images/Closer.jpg"></a>
+                    <a href="#show3">
                         <p class="pointer">
                             Thodi der or ther
                         </p>
@@ -302,8 +310,8 @@
                     </p>
                 </div>
                 <div class="latest-item">
-                    <a href="#show"><img src="Images/Graveyard.png"></a>
-                    <a href="#show">
+                    <a href="#show1"><img src="Images/Graveyard.png"></a>
+                    <a href="#show1">
                         <p class="pointer">
                             Jine mera dil
                         </p>
@@ -313,8 +321,8 @@
                     </p>
                 </div>
                 <div class="latest-item">
-                    <a href="#show"><img src="Images/Memories.jpg"></a>
-                    <a href="#show">
+                    <a href="#show3"><img src="Images/Memories.jpg"></a>
+                    <a href="#show2">
                         <p class="pointer">
                             Phir Hera pehri
                         </p>
@@ -324,8 +332,8 @@
                     </p>
                 </div>
                 <div class="latest-item">
-                    <a href="#show"><img src="Images/Veer.jpg"></a>
-                    <a href="#show">
+                    <a href="#show4"><img src="Images/Veer.jpg"></a>
+                    <a href="#show4">
                         <p class="pointer">
                             Veer Zara
                         </p>
@@ -337,7 +345,7 @@
             </div>
         </section>
 
-        <section id="latest-hindi-releases">
+        <section id="BEST-FROM-BOLLY-DIV">
             <h1 class="headings">
                 Latest Hindi
             </h1>
@@ -354,8 +362,8 @@
                     </p>
                 </div>
                 <div class="latest-item">
-                    <a href="#show"><img src="Images/Pachtaoge.jpg"></a>
-                    <a href="#show">
+                    <a href="#show1"><img src="Images/Pachtaoge.jpg"></a>
+                    <a href="#show1">
                         <p>
                             Pachtaoge
                         </p>
@@ -431,31 +439,31 @@
             </div>
             <div class="song-container">
                 <span>02</span>
-                <a href="#show"><img class="bx-blue" src="Images/Divide.jpg"></a>
+                <a href="#show"><img class="bx-blue" src="Images/Kaisehua.jpg"></a>
                 <a href="#show"><span>Mein fir bhi</span></a>
                 <i class="fi-xnsuxl-heart-solid adjust "></i>
             </div>
             <div class="song-container">
                 <span>03</span>
-                <a href="#show"><img class="bx-orange" src="Images/Plus.png"></a>
-                <a href="#show"><span>Yaa ali</span></a>
+                <a href="#show"><img class="bx-orange" src="Images/Hanuman.jpg"></a>
+                <a href="#show"><span>JAI Hanuman</span></a>
                 <i class="fi-xnsuxl-heart-solid adjust"></i>
             </div>
             <div class="song-container">
                 <span>04</span>
-                <a href="#show"><img class="bx-green" src="Images/X.png"></a>
-                <a href="#show"><span>Bloodstream</span></a>
+                <a href="#show"><img class="bx-green" src="Images/Bprak.jpg"></a>
+                <a href="#show"><span>Kisi or ka</span></a>
                 <i class="fi-xnsuxl-heart-solid adjust"></i>
             </div>
             <div class="song-container">
                 <span>05</span>
-                <a href="#show"><img class="bx-blue" src="Images/Divide.jpg"></a>
-                <a href="#show"><span>Ed Sherren</span></a>
+                <a href="#show"><img class="bx-blue" src="Images/gabru.jpg"></a>
+                <a href="#show"><span>Ae mere vatan</span></a>
                 <i class="fi-xnsuxl-heart-solid adjust"></i>
             </div>
             <div class="song-container">
                 <span>06</span>
-                <a href="#show"><img class="bx-orange" src="Images/Plus.png"></a>
+                <a href="#show"><img class="bx-orange" src="Images/Devotional.jpg"></a>
                 <a href="#show"><span>Ram nam adhar</span></a>
                 <i class="fi-xnsuxl-heart-solid adjust"></i>
             </div>
@@ -469,11 +477,47 @@
     <section id="music-player">
         <div id="show" class="audio-container">
             <audio controls loop autoplay>
-                <source src="./Song//Memories.mp3" type="audio/ogg">
+                <source src="./Song//bhoos.mp3" type="audio/mpeg">
                     Audio File not Supported
             </audio>
         </div>
     </section>
+
+
+    <section id="music-player">
+        <div id="show1" class="audio-container">
+            <audio controls loop autoplay>
+                <source src="./Song//jiyo ho-w.mp3" type="audio/ogg">
+                    <source src="./Song//jiyo ho-w.mp3" type="audio/mp3">
+
+                    Audio File not Supported
+            </audio>
+        </div>
+    </section>
+
+
+    <section id="music-player">
+        <div id="show2" class="audio-container">
+            <audio controls loop autoplay>
+                <source src="./Song//saiya-kala-.mp3" type="audio/ogg">
+                    <source src="./Song//saiya-kala-.mp3" type="audio/mp3">
+
+                    Audio File not Supported
+            </audio>
+        </div>
+    </section>
+
+    <section id="music-player">
+        <div id="show3" class="audio-container">
+            <audio controls loop autoplay>
+                <source src="./Song//hunter-w.mp3" type="audio/ogg">
+                    <source src="./Song//hunter-w.mp3" type="audio/mp3">
+
+                    Audio File not Supported
+            </audio>
+        </div>
+
+
 </body>
 
 </html>
