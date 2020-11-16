@@ -1,255 +1,645 @@
-/*ye upar vala sedction h topmost wali line*/
+                                /*Here, Background color and a universal font for the WEBPAGE is set*/
+                            
+                            html {
+                                background-color: #0c1027;
+                                font-family: sans-serif, 'Montserrat';
+                                color: white;
+                            }
+                            /*TO REMOVE UNDERLINE FROM ALL HYPERLINKS THAT PLAY THE SONG*/
+                            
+                            html a:link {
+                                text-decoration: none;
+                            }
+                            /* To keep the color as white even though HYPERLINK HAS BEEN ADDED*/
+                            
+                            html a {
+                                color: white;
+                            }
+                            /*Positioning of the main section*/
+                            
+                            main {
+                                top: 10%;
+                                display: inline-block;
+                                width: 70%;
+                            }
+                            /*Positioning of the Aside Section*/
+                            
+                            aside {
+                                top: 10%;
+                                display: inline-block;
+                                width: 21%;
+                                vertical-align: top;
+                                margin: 20px;
+                            }
+                            /* A universal class to fix the position of any element of my choosing*/
+                            
+                            .fixed {
+                                position: fixed;
+                            }
+                            Some Global Variables mainly using for Calculations Related to Poster-on-top
+                            
+                             :root {
+                                /* Tile Dimensions */
+                                --Poster-on-top-tile-spacing: 10px;
+                                --Poster-on-top-tile-width: 250px;
+                                --Poster-on-top-tile-height: 172px;
+                             }
+                        
+                            /* On Poster section desplay is flex  */
+                            .Poster-on-topy-row {
+                                display: flex;
+                                margin-top: 5%;
+                                margin-left: 3%;
+                                margin: 6%;
+                                justify-content: space-evenly;
+                            }
+                            
+                            .Poster-on-topy-tile {
+                                display: inline-block;
+                                height: 150px;
+                                width: 240px;
+                            }
+                            
+                            .Poster-on-topy-tile img {
+                                height: 100%;
+                                width: 100%;
+                                border-radius: 3%;
+                                /* padding: 2%; */
+                                transition: 0.5s ease-in-out;
+                            }
+                            
+                            .Poster-on-topy-tile img:hover {
+                                transition: 0.5s ease-in-out;
+                                transform: scale(1.25);
+                            }
+                            /*Cursor Pointer Class wherever i have used it on text it will show hand sign*/
+                            
+                            .pointer {
+                                position: relative;
+                                cursor: pointer;
+                            }
 
-#top-section{
-	width: 100%;
-	/*border:2px solid black;*/
-	display: flex;
-	height: 2%;
-	justify-content: space-between;
-}
+                            /*Class for setting up the website Logo*/
+                            
+                            .iconimg {
+                                border-radius: 50%;
+                                height: 80px;
+                                width: 80px;
+                                margin-left: 50px;
+                                margin-top: 20px;
+                                color: red;
+                            }
+                            /*Setting the font color to white*/
+                            
+                            header span,
+                            p {
+                                color: white;
+                            }
+                            /*Setting all divs inside Header to work as Inline Block*/
+                            
+                            header div {
+                                display: inline-block;
+                            }
+                            
+                            #sNotification-dummy {
+                                transform: translateY(-20px);
+                                font-size: 25px;
+                                font-family: 'Montserrat', sans-serif;
+                            }
+                            /*SEARCH BAR*/
+                            
+                            @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+                            /*Search Bar Positioning */
+                            
+                            .search {
+                                width: 100%;
+                                position: relative;
+                                display: flex;
+                            }
+                            /*Defining the Default term inside Search Bar*/
+                            
+                            .SearchBar-Dummy
+                             {
+                                background-color: #12193e;
+                                width: 100%;
+                                border: 3px solid #12193e;
+                                border-right: none;
+                                padding: 5px;
+                                height: 15px;
+                                border-radius: 10px 0 0 10px;
+                                outline: none;
+                                color: #9DBFAF;
+                            }
 
-#premium-con{
-	width: 20%;
-	height:30px;
-	border:2px solid red;
-	margin-left: 20px;
-	margin-top: 8PX;
-	border-radius: 20%;
-	background-color:red ; 
-}
+                            /*Default search term on FOCUS*/
+                            
+                            .SearchBar-Dummy
+                            :focus {
+                                color: #ffff;
+                            }
+                            /*Styling and Positioning the search button*/
+                            
+                            .searchButton {
+                                position: absolute;
+                                width: 32px;
+                                height: 31px;
+                                border: 1px solid #12193e;
+                                background-color: #12193e;
+                                text-align: center;
+                                color: #ffff;
+                                border-radius: 10px 0 0 10px;
+                                cursor: pointer;
+                                font-size: 13px;
+                                transform: translateX(-24px);
+                            }
+                            /*Styling and Positioning the voice-search button*/
+                            
+                            .micButton {
+                                width: 37px;
+                                height: 31px;
+                                border: 1px solid #12193e;
+                                background: #12193e;
+                                text-align: center;
+                                color: #ffff;
+                                border: 0 20px 20px 0;
+                                cursor: pointer;
+                                font-size: 13px;
+                            }
+                            /*Resize the Notification-dummy to see the search bar change!*/
+                            
+                            .Notification-dummy {
+                                width: 25%;
+                                position: absolute;
+                                top: 6.9%;
+                                left: 60%;
+                            }
+                            /*Styling and positioning the Notification Button*/
+                            
+                            .noti {
+                                position: absolute;
+                                width: 37px;
+                                height: 31px;
+                                border: 1px solid #0c1027;
+                                font-size: 14px;
+                                background: #0c1027;
+                                color: white;
+                                cursor: pointer;
+                                top: 6.9%;
+                                left: 87%;
+                            }
 
-/*jo div ke andar likna h normally uska class*/
-.text-in-div{
-	text-align: center;
-	font-weight: bold;
+                            /*Position and Styling the mine Display Pic  @vickyThakur0398*/
+                            
+                            .dp {
+                                height: 50px;
+                                width: 50px;
+                                border-radius: 50%;
+                                position: absolute;
+                                top: 5.9%;
+                                left: 91.5%;
+                            }
+                            /*DROPDOWN MENU, Responsivity*/
+                            
+                            .bars {
+                                color: white;
+                                position: absolute;
+                                top: 5.9%;
+                                left: 87.5%;
+                                font-size: 1.4rem;
+                                padding-left: 36px;
+                                display: none;
+                            }
+                            
+                            .dropdown-list {
+                                margin: 0;
+                                display: none;
+                                background-color: #12193e;
+                                box-shadow: 0px 4px 8px 1px #12193e80;
+                            }
+                            
+                            .dropdown-list ul {
+                                margin: 0.2rem 0.2rem;
+                                text-align: left;
+                                padding: 0px 0.8rem;
+                            }
+                            
+                            .dropdown-menu:hover .dropdown-list {
+                                display: block;
+                                position: absolute;
+                                right: 5.9%;
+                                top: 9.9%;
+                            }
+                            
+                            .dropdown-list li {
+                                margin: 0.4rem 0px;
+                            }
+                            
+                            .nav-menu li a {
+                                transition: color 0.5s, border-bottom 4s;
+                            }
+                            
+                            .nav-menu li a:hover {
+                                color: #999997;
+                                border-bottom: 1px solid black;
+                            }
+                            
+                            .no-list-style {
+                                list-style: none;
+                            }
+                            
+                            .no-list-style li {
+                                font-weight: 100;
+                                font-size: 0.9rem;
+                            }
+                            
+                            .horizontal-list {
+                                padding-left: 0px;
+                                margin: 0px;
+                            }
+                            
+                            .horizontal-list li {
+                                display: inline-block;
+                                margin: 0px 8px 8px 0px;
+                            }
+                            /* EVER GREEN CONTAINER H */
+                            
+                            .headings {
+                                color: white;
+                                margin-left: 40px;
+                            }
+                            /*Container for all the items*/
+                            
+                            .EVER-GREEN-CONTAINER {
+                                box-sizing: border-box;
+                                display: flex;
+                                flex-Notification-dummy: Notification-dummy;
+                                padding: 0 50px;
+                                margin-bottom: 20px;
+                                justify-content: space-around;
+                                flex-direction: row;
+                            }
 
+                            /* Styling all the images in the CONTAINER*/
+                            
+                            .EVER-GREEN-CONTAINER img {
+                                height: 100px;
+                                width: 100px;
+                                border-radius: 5px;
+                                cursor: pointer;
+                                transition: .5s ease-in-out;
+                            }
+                            /*Adding HOVER effects on all the images in the CONTAINER*/
+                            
+                            .EVER-GREEN-CONTAINER img:hover {
+                                opacity: 0.7;
+                            }
 
-}
+                            /*Defining single FLEX based Item inside the container*/
+                            
+                            .flex-item {
+                                height: 100px;
+                                width: 300px;
+                                margin: 10px 10px 10px 10px;
+                                padding: 10px 10px 10px 10px;
+                            }
 
-/*logo matlb circle me dalna h uska*/
-#logom{
-	height: 50px;
-	width: 50px;
-	margin-left: 5%;
-	border-radius: 50%;
-	background-image: cover;
+                            /* Postioning the Info about the Song*/
+                            
+                            .info-container {
+                                display: inline-block;
+                                box-sizing: border-box;
+                                vertical-align: top;
+                            }
+                            /* Styling all the P tages insided Info Container*/
+                            
+                            .info-container p {
+                                padding: 0;
+                                margin-left: 5px;
+                                text-align: justify;
+                                line-height: 10px;
+                            }
+                            /* Styling all the span tages insided Info Container*/
+                            
+                            .info-container span {
+                                margin-left: 166px;
+                                font-size: 12px;
+                                color: #999997;
+                            }
+                            /* A universal class to set the text color to grey and font size to 12px used inside the WEBPAGE*/
+                            
+                            .text-grey-12 {
+                                font-size: 12px;
+                                color: #999997;
+                            }
+                            /*POPULAR ARTISTS*/
+                            /*Container for all the items*/
+                            
+                            .popular-artist-container {
+                                padding-left: 20px;
+                                display: flex;
+                                flex-direction: row;
+                                flex-Notification-dummy: Notification-dummy;
+                                justify-content: space-around;
+                            }
+                            /* Styling all the P tages inside Artist Container*/
+                            
+                            .popular-artist-container p {
+                                text-align: center;
+                            }
+                            
+                            .popular-artist-img {
+                                display: block;
+                                margin: 10px 10px -11px 10px;
+                                border-radius: 50%;
+                                height: 130px;
+                                width: 130px;
+                            }
+                            /* This is a special overlay PLAY BUTTON ICON over each image of popular Artist*/
+                            /* Size is equal to the size of IMAGE INSIDE CONTAINER*/
+                            
+                            
+                            .icon {
+                                position: absolute;
+                                height: 40px;
+                                width: 40px;
+                                transform: translate(9px, -120px);
+                                padding: 46px 46px 46px 46px;
+                                background-color: rgba(12, 16, 39, 0.5);
+                                opacity: 0;
+                                border-radius: 50%;
+                                transition: .5s ease-in-out;
+                            }
+                            /* Hover effects on the overlay of play button over each Popular Artist Image*/
+                            
+                            .icon:hover {
+                                opacity: 1;
+                            }
+                            /*MUSIC STATIONS*/
+                            /*Defining a Container for all the Flexed Items*/
+                            
+                            .music-stations-container {
+                                display: flex;
+                                flex-Notification-dummy: Notification-dummy;
+                                justify-content: space-around;
+                                margin: 30px 30px 10px 30px;
+                            }
+                            /*Styling the Radio Icon symbolising the Section of Music Stations*/
+                            
+                            .main-icon img {
+                                height: 120px;
+                                width: 120px;
+                                margin: 20px 20px 20px 20px;
+                            }
+                            /*Styling all the Stations Icon Images which direct to different types of mixes*/
+                            
+                            .station-img {
+                                height: 100px;
+                                width: 100px;
+                                margin: 22px 10px 10px 10px;
+                                padding: 10px 10px 10px 10px;
+                                border-radius: 50%;
+                                cursor: pointer;
+                                transition: .5s ease-in-out;
+                            }
+                            /*-------------Styling the Name of each Station like radio sufi etc----------*/
+                            
+                            .station-name {
+                                text-align: center;
+                                text-shadow: 2px 2px black;
+                                position: absolute;
+                                transform: translate(50px, 55px);
+                                cursor: pointer;
+                                transition: .5s ease-in-out;
+                                z-index: 9;
+                            }
+                            /*Adding hover effect of GROWTH to the images of each station*/
+                            
+                            .station-img:hover {
+                                transform: scale(1.1);
+                            }
+                            /*Adding an Hover Effect over the p tags of container to ENLARGE all the images inside the CONTAINER*/
+                            
+                            .station-name:hover+.station-img {
+                                transform: scale(1.1);
+                            }
+                            /*TYPES OF MUSIC SECTION*/
+                            /*Defining a Container for all the Flexed Items*/
+                            
+                            .types-container {
+                                margin: 10px 10px 33px 10px;
+                                display: flex;
+                                flex-Notification-dummy: Notification-dummy;
+                                justify-content: space-around;
+                            }
+                            
+                            .types-container img {
+                                margin: 10px 10px 10px 10px;
+                                height: 175px;
+                                width: 300px;
+                                cursor: pointer;
+                                transition: transform 1s, filter 0.75s ease-in-out;
+                                transform-origin: center center;
+                                filter: brightness(50%);
+                                z-index: -1;
+                            }
 
-}
+                            /*Adding hover effects on each image insdie the Container to ENLARGE AND BRIGHTEN the images*/
+                            
+                            .types-container img:hover {
+                                filter: brightness(100%);
+                                transform: scale(1.2);
+                            }
+                            /*Postioning the items relative to the Container*/
+                            
+                            .types-items {
+                                position: relative;
+                            }
+                            
+                            .types-items p {
+                                text-align: center;
+                                font-size: 20px;
+                                z-index: 999;
+                                position: absolute;
+                                top: 30%;
+                                width: 100%;
+                            }
+                            /*Adding an Hover Effect over the p tags of container to ENLARGE AND BRIGHTEN all the images inside the CONTAINER*/
+                            
+                            #typep:hover+#typeimg {
+                                filter: brightness(100%);
+                                transform: scale(1.2);
+                            }
+                            /*BEST FROM BOLLYWOOD AND LATEST BOLLYWOOD IT IS FOR BOTH*/
+                            /*Both Sections using unified system of classes*/
+                            /*Defining a Container for all the Flexed Items*/
+                            
+                            .latest-container {
+                                padding: 0 0 0 20px;
+                                display: flex;
+                                flex-Notification-dummy: Notification-dummy;
+                                justify-content: space-around;
+                            }
+                            /*Styling all the p tags inside the container*/
+                            
+                            .latest-container p {
+                                text-align: center;
+                                line-height: 6px;
+                                margin-left: 10px;
+                            }
+                            /*Styling all the images inside the container*/
+                            
+                            .latest-container img {
+                                margin: 10px 10px -5px 10px;
+                                height: 130px;
+                                width: 130px;
+                                cursor: pointer;
+                                border-radius: 15%;
+                                transition: .5s ease-in-out;
+                            }
+                            /*Adding a little fade effect on Hover over the images of albums*/
+                            
+                            .latest-container img:hover {
+                                opacity: 0.7;
+                                transform: scale(1.1);
+                            }
+                            
+                            .latest-item {
+                                padding: 1px 1px 1px;
+                                /* margin: 10px 10px 10px 10px; */
+                            }
+                            /* ASIDE SECTION */
+                            /*Aside queue of Recently Played Songs used on Home Page*/
+                            /*Making all the Divs inside queue to be Inline Block*/
+                            
+                            .queue-container div {
+                                display: inline-block;
+                            }
+                            /*Class used for Defining heading for various sections in Aside Bar*/
+                            
+                            .aside-headings {
+                                color: white;
+                            }
+                            /*Styling of the Song Container for Aside Bar*/
+                            
+                            .song-container {
+                                display: flex;
+                                margin: 0px 1px -7px 1px;
+                                padding: 6px 6px 6px 6px;
+                                width: 95%;
+                                position: relative;
+                            }
+                            /*Styling images inside Song Container*/
+                            
+                            .song-container img {
+                                width: 50px;
+                                height: 50px;
+                                margin: 16px 14px 13px 32px;
+                            }
+                            /*Styling Spans inside Song Container*/
+                            
+                            .song-container span {
+                                position: absolute;
+                                vertical-align: top;
+                                margin-top: 33px;
+                            }
+                            /*A class created to Adjust the various Font Awesome and FriIconix Icons added to the Queue*/
+                            /* It is mainly for heart */
+                            .adjust {
+                                position: absolute;
+                                right: 10%;
+                                top: 40%;
+                            }
+                            /*Styling the Favourites Icon */
+                            /* heart will glow and transition using hover and this  */
+                            .fi-xnsuxl-heart-solid {
+                                transition: 0.5s ease-in-out;
+                                cursor: pointer;
+                            }
 
-#search-icon{
-	margin-left:0;
-	margin-top: 8px;
-	/*border: 1px solid cyan;*/
-}
+                            
+                            .fi-xnsuxl-heart-solid:hover {
+                                color: red;
+                            }
+                            /*A class used to adjust the icons of Favourites and Add to List*/
+                            
+                            .ed-adjust {
+                                position: absolute;
+                                right: 12%;
+                                top: 32%;
+                            }
+                            
+                            /*AUDIO PLAYER  Called upon by clicking the Images of the Songs */
+                            /*Styling the Audio Container*/
+                            
+                            .audio-container {
+                                position: fixed;
+                                width: 66%;
+                                border-radius: 20px;
+                                margin: auto;
+                                text-align: center;
+                                background-color: #f1f3f4;
+                                margin-top: 40px;
+                                z-index: 999;
+                                top: 85%;
+                                bottom: 20px;
+                                right: 0;
+                                left: 0;
+                                visibility: hidden;
+                                opacity: 0;
+                                transition: 0.5s ease-in-out;
+                            }
+                            /*Adding Pop-up sort of effect to the Music Player*/
+                            #show:target {
+                                visibility: visible;
+                                opacity: 0.8;
+                            }
 
-#search-icon-logo{
- margin-left: 32px;
-}
+                            #show1:target {
+                                visibility: visible;
+                                opacity: 0.8;
+                            }
 
-#search-icon-logo img{
-	width: 22px;
-	margin-top:62%;
-	margin-left: 20%;
-	opacity: 1; 
-}
+                            #show2:target {
+                                visibility: visible;
+                                opacity: 0.8;
+                            }
 
+                            #show3:target {
+                                visibility: visible;
+                                opacity: 0.8;
+                            }
 
-#user-id{
-	margin-left:2%; 
-	height: 50px;
-	width: 50px;
-	border: 2px solid black;
-	border-radius: 50%;
-
-
-}
-
-/*now we are working on nav section*/
-#nav-bar{
-	margin: 2px;
-	width: 100%;
-	border: 1px solid black;  
-	background-color:red;
-	display: inline-block;
-
-}
-
-#nav-bar li{
-	
-	display: inline-block;
-	margin :0px 79px 0px 2px;
-	font-weight: 100;
-	font-size: 1rem;
-}
-
-
-
-/*Div of music section whole*/
-#music-whole{
-	width: 98vw;
-	border: 1px solid black;
-}
-
-
-#top-music-flex{
-	width: 80%;
-	border:1px solid red;
-	height: 300px;
-	overflow-x: scroll;
-	overflow-y: hidden;
-	margin-left: 15px;
-	background-color: black;
-	/*display: flex;*/
-	/*/overflow: scroll;*/
-}
-
-#container{
-	width: 200%;
-}
-
-::-webkit-scrollbar-y {
-  width: 200px;
-  color: red;
-}
-div::-webkit-scrollbar {
-  width: 1px;
-}
-
-div::-webkit-scrollbar-track {
-  border-radius: 10px;
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
-
-div::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background-color: lightgrey;
-  outline: 2px solid slategrey;
-}
-
-
-
-.one{
-	height: 225px;
-	width: 360px;
-	border:1px solid black;
-	margin: 20px;
-	/*display: inline-flex;*/
-}
-
-#top-music-flex div{
-
-	display: inline-block;
-	display:inline-flex;
-	flex-direction: row;
-}
-
-#uri{
-	background-image: url("uri.jpg");
-		  	background-size:cover;
-
-}
-
-#kesri{
-	/*<img src="kesri.jpg">*/
-	background-image: url("kesri.jpg");
-			  	background-size:cover;
-
-}
-
-#saheed{
-	background-image: url(saheed.jpg);
-			  	background-size:cover;
-
-}
-
-#akshay{
-	background-image: url("akshay.jpg");
-	
-	background-size: contain;
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-/*.one img{
-	  /*object-fit: cover;*/
-	    background-repeat: no-repeat;
-  		background-size: auto;
-
- 
-
-}
-
-
-/*button focus*/
-button:focus {
-    border: none;
-    outline: none;
-}
-
-*/
-/*#side-player{*/
-	width: 20%;
-	border:1px solid maroon;
-	/*display: inline-block;*/
-}
-
-
-/*ab ye h har image ki height or width*/
-/*.image-all{
-	height: 100px;
-	width: 40px;
-	border: 8px solid balck;
-}
-
-#border{
-	background-image: cover;
-	height: 20px;
-	width: 20px;
-}*/
-
-/*#top-music-flex{
-	display: inline-flex;
-}
-*/
-
-
-/*graetest hits wala*/
-#hits{
-	background-color: blue;
-}
-
-
-
-/*aside wala section ka scene pura*/
-aside{
-	width: 18%;
-	height:600px;
-	border: 1px solid cyan;
-	float: right;
-	margin-top: -303px;
-	/*animation-name: bada-ho-ja;*/
-	/*transform: scale(5);*/
-	/*display: none;*/
-}
-
-aside:hover{
-	position: abso;
-	background-color: blue;
-	float: right;
-	transform:scaleX(1.5);
-	float:right;
-}
-
-
-#brand-jingle{
-	margin:6%;
-	padding:4%;
-	width: 80%;
-	height: 8em;
-	background-color:red;
-	border: 2px solid green;
-
-}
-
-
-
+                            #show4:target {
+                                visibility: visible;
+                                opacity: 0.8;
+                            }
+                            /*Defining the Width of Music Player*/
+                            
+                            .audio-container audio {
+                                width: 100%;
+                            }
+                            /*After squeezing the page to 846px, Search Bar,Notification Menu and Creator Pic gets converted into a Drop Menu*/
+                            
+                            @media only screen and (max-width: 864px) {
+                                .bars {
+                                    display: block;
+                                }
+                                .Notification-dummy {
+                                    display: none;
+                                }
+                                .Notifications {
+                                    display: none;
+                                }
+                                .my-pic {
+                                    display: none;
+                                }
+                            }
+                            /*The Heart icon from Recently Played disappears after sqeezing the width to 1240px*/
+                            
+                            @media screen and (max-width: 1240px) {
+                                .adjust {
+                                    visibility: hidden;
+                                }
+                            }
+                                
+                           
